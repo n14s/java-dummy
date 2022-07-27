@@ -1,0 +1,14 @@
+# .github/workflows/git-sync.yml
+
+on: push
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "https://n14s: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@github.com/n14s/java-dummy.git"
+          source_branch: "main"
+          destination_repo: "https://n14s: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@github.com/n14s/java-dummy-mirror.git"
+          destination_branch: "main"
