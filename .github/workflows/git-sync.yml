@@ -8,7 +8,7 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://n14s: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@github.com/n14s/java-dummy.git"
+          source_repo: "https://n14s:${{secrets.MIRRORACTIONSECRET}}@github.com/n14s/java-dummy.git"
           source_branch: "main"
-          destination_repo: "https://n14s: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@github.com/n14s/java-dummy-mirror.git"
+          destination_repo: "https://n14s:${{secrets.MIRRORACTIONSECRET}}@github.com/n14s/java-dummy-mirror.git"
           destination_branch: "main"
